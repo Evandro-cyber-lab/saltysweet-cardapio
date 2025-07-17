@@ -2,53 +2,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cardápio Salty Sweet</title>
-  <style>
-    body { font-family: 'Arial', sans-serif; background: #fdf9fd; color: #333; margin: 0; padding: 0; }
-    header { background: #e8dffb; padding: 30px 15px; text-align: center; }
-    header h1 { margin: 0; color: #6b44b8; font-size: 28px; }
-    section { padding: 20px; max-width: 800px; margin: auto; }
-    .item { background: #fff; margin-bottom: 20px; padding: 15px; border-radius: 8px; box-shadow: 0 0 10px #eee; }
-    .item h2 { margin: 0 0 10px; color: #7c52a1; font-size: 20px; }
-    .item p { margin: 5px 0; }
-    .preco { color: #5a2d82; font-weight: bold; }
-    .btn { display: inline-block; margin-top: 10px; padding: 10px 15px; background: #7c52a1; color: #fff; border-radius: 6px; text-decoration: none; font-weight: bold; }
-    .frete-btn { position: fixed; bottom: 20px; right: 20px; background: #7c52a1; color: #fff; padding: 15px; border-radius: 50%; font-size: 22px; border: none; cursor: pointer; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Salty Sweet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #b497d6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #b497d6;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        .produto {
+            margin: 15px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        .links a {
+            margin: 10px;
+            padding: 10px 20px;
+            background: #b497d6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Salty Sweet 🍫 Cardápio Digital</h1>
-    <p>Escolha sua delícia e peça direto no WhatsApp 💜</p>
-  </header>
-  <section>
-    <div class="item">
-      <h2>Copo da Felicidade – Ninho, Nutella, Brownie e Morango (300ml)</h2>
-      <p>Brigadeiro de Ninho, Nutella, Brownie e Morango.</p>
-      <p class="preco">R$ 41,90</p>
-      <a class="btn" href="https://wa.me/5541995651291?text=Olá!%20Quero%20pedir%20o%20Copo%20da%20Felicidade%20(Ninho,%20Nutella,%20Brownie%20e%20Morango)">Pedir no WhatsApp</a>
-    </div>
-    <div class="item">
-      <h2>Fatia Brownie Morango (250g)</h2>
-      <p>Brigadeiro de Ninho, Nutella e morangos selecionados.</p>
-      <p class="preco">R$ 29,90</p>
-      <a class="btn" href="https://wa.me/5541995651291?text=Olá!%20Quero%20pedir%20a%20Fatia%20Brownie%20Morango%20250g">Pedir no WhatsApp</a>
-    </div>
-    <div class="item">
-      <h2>Açaí no Copo (550ml)</h2>
-      <p>Com 1 fruta, 1 cobertura e 1 complemento GRÁTIS!</p>
-      <p class="preco">R$ 29,90</p>
-      <a class="btn" href="https://wa.me/5541995651291?text=Olá!%20Quero%20pedir%20o%20Açaí%20de%20550ml%20com%20complementos">Pedir no WhatsApp</a>
-    </div>
-    <div class="item">
-      <h2>Cone Trufado Ninho com Nutella</h2>
-      <p>Casquinha crocante com brigadeiro de Ninho e Nutella. Finalizado com Kinder Bueno.</p>
-      <p class="preco">R$ 24,90</p>
-      <a class="btn" href="https://wa.me/5541995651291?text=Olá!%20Quero%20pedir%20o%20Cone%20Trufado%20Ninho%20com%20Nutella">Pedir no WhatsApp</a>
-    </div>
-  </section>
-  <button class="frete-btn" onclick="window.location.href='https://wa.me/5541995651291?text=Olá!%20Gostaria%20de%20calcular%20o%20frete.%20Meu%20CEP%20é%20_____';">📍</button>
+    <header>
+        <h1>Cardápio Salty Sweet</h1>
+        <p>Doces, açaís e delícias direto no seu WhatsApp!</p>
+    </header>
+    <section>
+        <h2>Geladinho Gourmet</h2>
+        <div class="produto">Ninho, Nutella, Brownie e Morango 300ml - R$ 9,99</div>
+        <div class="produto">Kinder e Leite Ninho 300ml - R$ 9,99</div>
+
+        <h2>Copos da Felicidade</h2>
+        <div class="produto">Vários sabores com camadas irresistíveis - a partir de R$ 14,99</div>
+
+        <h2>Açaí Cremoso</h2>
+        <div class="produto">Com acompanhamentos e toppings deliciosos - a partir de R$ 16,99</div>
+
+        <h2>Fatia de Brownie</h2>
+        <div class="produto">Brownie caseiro recheado - R$ 7,99</div>
+
+        <h2>Empadão + Combos</h2>
+        <div class="produto">Empadão recheado + combo doce - R$ 19,99</div>
+
+        <h2>Cone Trufado</h2>
+        <div class="produto">Sabores variados e super recheado - R$ 6,99</div>
+    </section>
+    <section class="links" style="text-align:center;">
+        <h2>Acesse nossas páginas</h2>
+        <a href="https://wa.me/5541995651291" target="_blank">WhatsApp</a>
+        <a href="https://www.instagram.com/saltysweet" target="_blank">Instagram</a>
+        <a href="https://www.ifood.com.br" target="_blank">iFood</a>
+    </section>
+    <footer>
+        Salty Sweet © 2025 - Todos os direitos reservados.
+    </footer>
 </body>
 </html>
