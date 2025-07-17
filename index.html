@@ -1,89 +1,135 @@
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio Salty Sweet</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f5f5fa;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff6fb;
+            color: #3e3e3e;
             margin: 0;
             padding: 0;
-            color: #333;
         }
         header {
-            background: #b497d6;
-            color: white;
+            background-color: #e8c3d4;
             padding: 20px;
             text-align: center;
         }
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
         }
-        h2 {
-            color: #b497d6;
-            border-bottom: 2px solid #eee;
+        .container {
+            padding: 20px;
+        }
+        .category {
+            margin-bottom: 30px;
+        }
+        .category h2 {
+            color: #b8579d;
+            border-bottom: 2px solid #b8579d;
             padding-bottom: 5px;
         }
-        .produto {
-            margin: 15px 0;
+        .item {
+            margin-top: 10px;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .item h3 {
+            margin: 10px 0 5px 0;
+        }
+        .item p {
+            margin: 0;
         }
         footer {
-            text-align: center;
+            background-color: #e8c3d4;
             padding: 20px;
-            font-size: 14px;
+            text-align: center;
         }
         .links a {
-            margin: 10px;
-            padding: 10px 20px;
-            background: #b497d6;
-            color: white;
+            margin: 0 10px;
+            color: #3e3e3e;
             text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Cardápio Salty Sweet</h1>
-        <p>Doces, açaís e delícias direto no seu WhatsApp!</p>
+        <h1>Cardápio Digital - Salty Sweet</h1>
     </header>
-    <section>
-        <h2>Geladinho Gourmet</h2>
-        <div class="produto">Ninho, Nutella, Brownie e Morango 300ml - R$ 9,99</div>
-        <div class="produto">Kinder e Leite Ninho 300ml - R$ 9,99</div>
-
-        <h2>Copos da Felicidade</h2>
-        <div class="produto">Vários sabores com camadas irresistíveis - a partir de R$ 14,99</div>
-
-        <h2>Açaí Cremoso</h2>
-        <div class="produto">Com acompanhamentos e toppings deliciosos - a partir de R$ 16,99</div>
-
-        <h2>Fatia de Brownie</h2>
-        <div class="produto">Brownie caseiro recheado - R$ 7,99</div>
-
-        <h2>Empadão + Combos</h2>
-        <div class="produto">Empadão recheado + combo doce - R$ 19,99</div>
-
-        <h2>Cone Trufado</h2>
-        <div class="produto">Sabores variados e super recheado - R$ 6,99</div>
-    </section>
-    <section class="links" style="text-align:center;">
-        <h2>Acesse nossas páginas</h2>
-        <a href="https://wa.me/5541995651291" target="_blank">WhatsApp</a>
-        <a href="https://www.instagram.com/saltysweet" target="_blank">Instagram</a>
-        <a href="https://www.ifood.com.br" target="_blank">iFood</a>
-    </section>
+    <div class="container">
+        <div class="category">
+            <h2>Geladinho Gourmet</h2>
+            <div class="item">
+                <img src="img/geladinho.jpg" alt="Geladinho Gourmet">
+                <h3>Geladinho Gourmet</h3>
+                <p>Sabores variados e cremosos.</p>
+                <p><strong>R$ 4,00</strong></p>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Copos da Felicidade</h2>
+            <div class="item">
+                <img src="img/copo.jpg" alt="Copo da Felicidade">
+                <h3>Copo da Felicidade</h3>
+                <p>Combinação perfeita de camadas doces.</p>
+                <p><strong>R$ 14,00</strong></p>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Açaí Cremoso</h2>
+            <div class="item">
+                <img src="img/acai.jpg" alt="Açaí Cremoso">
+                <h3>Açaí Cremoso</h3>
+                <p>Açaí com granola e leite condensado.</p>
+                <p><strong>R$ 12,00</strong></p>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Fatias de Brownie</h2>
+            <div class="item">
+                <img src="img/brownie.jpg" alt="Fatia de Brownie">
+                <h3>Fatia de Brownie</h3>
+                <p>Brownie artesanal com cobertura.</p>
+                <p><strong>R$ 6,00</strong></p>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Empadão + Combos</h2>
+            <div class="item">
+                <img src="img/empadao.jpg" alt="Empadão + Combos">
+                <h3>Empadão de Frango</h3>
+                <p>Empadão cremoso com massa leve.</p>
+                <p><strong>R$ 10,00</strong></p>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Cone Trufado</h2>
+            <div class="item">
+                <img src="img/cone.jpg" alt="Cone Trufado">
+                <h3>Cone Trufado</h3>
+                <p>Cone recheado com brigadeiro e coberturas especiais.</p>
+                <p><strong>R$ 8,00</strong></p>
+            </div>
+        </div>
+    </div>
     <footer>
-        Salty Sweet © 2025 - Todos os direitos reservados.
+        <div class="links">
+            <a href="https://wa.me/5541995651291" target="_blank">WhatsApp</a>
+            <a href="https://www.ifood.com.br" target="_blank">iFood</a>
+            <a href="https://www.instagram.com/saltysweet/" target="_blank">Instagram</a>
+        </div>
+        <p>Salty Sweet - Santa Quitéria, Curitiba</p>
     </footer>
 </body>
 </html>
